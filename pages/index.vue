@@ -34,10 +34,9 @@
 export default {
   created(){
     setTimeout(() => {
-      axios.request({
+      axios.post({
         // `url` is the server URL that will be used for the request
         url: 'http://localhost:8080/MyGene2/api/external/geneiobio/token/12345',
-        method: 'get',
         headers: {
           'X-Auth-Token': 'bc9b7e9c-ab1b-11e7-abc4-cec278b6b50b'
         },
